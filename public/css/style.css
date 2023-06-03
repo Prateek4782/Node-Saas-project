@@ -1,0 +1,66 @@
+.tag{
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 15px;
+
+}
+.paid{
+
+background-color: rgb(203, 224, 240);
+color: rgb(18, 181, 0);
+}
+.new{
+
+background-color: rgb(241, 255, 241);
+color: rgb(21, 0, 128);
+}
+.follow{
+
+background-color: rgb(221, 246, 221);
+color: rgb(0, 230, 42);
+}
+.resolved{
+    background-color:rgb(241, 255, 241) ;
+    color: red;
+}
+.form-btn{
+    
+    border:none;
+    margin: 0;
+    color: dodgerblue;
+}
+.bg-1{
+    background-color: rgb(244, 233, 253);
+    color: rgb(133, 27, 232);
+    border-radius: 12px;
+    margin: 10px;
+}
+.bg-2{
+    background-color: rgb(249, 255, 234);
+    color: rgb(130, 159, 0);
+    border-radius: 12px;
+    margin: 10px;
+}
+.bg-3{
+    background-color: rgb(233, 253, 237);
+    color: rgb(0, 137, 25);
+    border-radius: 12px;
+    margin: 10px;
+}
+.bg-4{
+    background-color:rgb(215, 242, 242);
+    color: teal;
+    border-radius: 12px;
+    margin: 10px;
+}
+.data-card h1{
+    font-size: 20px;
+margin: 0;
+
+}
+.data-card p{
+    font-size: 17px;
+margin: 0;
+
+}

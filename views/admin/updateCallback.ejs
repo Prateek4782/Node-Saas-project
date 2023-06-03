@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h2 class="fw-bold">Update call back for <%=callback.name %></h2>
+            <div class="mt-5">
+              <form action="/store-update-callback" method="post">
+                <input type="hidden" name="id" value="<%=callback._id%>">
+                <div class="d-flex" style="gap: 20px;">
+                  <div class="form-floating mb-3 w-50">
+                    <input type="text" name="name" value="<%=callback.name%>" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Full Name</label>
+                  </div>
+                  <div class="form-floating mb-3 w-50 ">
+                    <input type="email" name="email"  value="<%=callback.email%>" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px;">
+                
+                  <div class="form-floating mb-3 w-50">
+                    <input type="number" name="phone"  value="<%=callback.phone%>" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Phone Number</label>
+                  </div>
+                  <div class="form-floating w-50">
+                    <textarea rows="4" name="status" class="form-control" id="floatingPassword"><%=callback.status%></textarea>
+
+                    <label for="floatingPassword">Status</label>
+                  </div>
+                </div>
+                <div class="form-floating">
+                  <textarea rows="4" cols="10" name="remarks" class="form-control" id="floatingPassword" placeholder="Remark"><%=callback.remarks%></textarea>
+
+                  <label for="floatingPassword">Remark</label>
+                </div>
+                <button class="btn btn-primary mt-3 w-100 py-3">Update Callback</button>
+              </div>
+            </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

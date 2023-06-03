@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <%- include('nav')%>
+    <div class="container m5-5">
+        <div class="row mt-5">
+            <%for(let i=0; i<products.length; i++ ){%>
+            <div class="col-md-6">
+            <div class="card ">
+                <div class="card-body ">
+                <img src="https://source.unsplash.com//1600x900/?<%=products[i].img%>" class="img-fluid" alt="">
+                <div class="d-flex justify-content-between align-content-center mt-4">
+                    <h3><%=products[i].title%></h3>
+                    <a href="/checkout?product=<%= encodeURIComponent(products[i].title) %>" class="btn btn-dark px-4 rounded-pill">Pay Now</a>
+
+                </div>
+                <p class="small mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, animi? Commodi recusandae repellendus tempore delectus, nostrum culpa, sunt dignissimos rerum voluptatem assumenda praesentium facere sint id quos ut. Obcaecati molestiae facilis ullam perspiciatis, fugit, cumque eos eligendi cum veritatis aliquid vero atque consectetur! Perferendis hic nobis esse possimus! Laudantium ratione hic eius facere accusantium cumque iste ipsam illum magnam, possimus voluptate, dolores quia! Voluptatum dicta temporibus iusto, quos velit odit? Expedita nulla reiciendis dolore impedit velit voluptatibus architecto veniam modi?</p>
+            </div></div>
+            </div>
+            <%}%>
+        </div>
+    </div>
+</body>
+</html>
