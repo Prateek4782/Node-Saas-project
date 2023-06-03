@@ -7,9 +7,11 @@ const session = require('express-session');
 const mongoDbSession = require('connect-mongodb-session')(session);
 const ObjectId = require('mongodb').ObjectId;
 const bycrpt = require('bcrypt')
+const cors = require('cors');
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:true}))
+app.use(cors());
 const router = require('./routes')
 const Users = require('./model/Users')
 const Callback = require('./model/Callbacks')
